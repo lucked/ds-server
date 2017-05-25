@@ -1,15 +1,16 @@
-#Digital Signage (HTML5)
+# Digital Signage (HTML5)
 
 
 >
 The advertising had improved with the invention of television,
 the internet was the second improvement of advertising, IoT will improve advertising.
  
-##Goal
+## Goal
+
 Terminal is front end, server is back end,
 We will provide technical support, and open source code, then we can provide data service.
 
-##RESTful API's
+## RESTful API's
 
 - /api/playlists
 	+ get: 获取播放单
@@ -27,9 +28,9 @@ We will provide technical support, and open source code, then we can provide dat
 - /api/broadcast
 	+ post: 发送消息
 
-##Code
+## Code
 
-###Mongoose
+### Mongoose
 
 >
 Schema、Model、Entity的关系
@@ -78,9 +79,9 @@ Model和Entity都可对数据库操作造成影响，但Model比Entity更具操�
 	});
 	```
 
-##Data
+## Data
  
-###From server to terminal                                                                                                                       
+### From server to terminal                                                                                                                       
 
 **playlist**
 
@@ -107,7 +108,7 @@ Model和Entity都可对数据库操作造成影响，但Model比Entity更具操�
 }
 ```
 
-###From terminal to server
+### From terminal to server
 
 **signup**
 
