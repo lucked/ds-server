@@ -1,43 +1,26 @@
 var mongoose = require('./mongodb.js');
 
 /*
-{
-	unit: [
-		{
-			mode: "single",
-			duration: "2017-1-1 12:00:00 ~ 2017-1-1 18:00:00",
-			element: {
-				type: "video",
-				layout: {
-					left: 0,
-					top: 0,
-					width: 1080,
-					height: 1920
-				},
-				source: [
-					"/video/1.mp4"
-				]
-			}
-		}
-	]
-};
+{"uni":[{"mod": "cycle","dur": "2017-1-1 12:00:00 ~ 2017-1-1 18:00:00","ele":[{"typ":"video","siz":{"l":0,"t": 0,"w":1080,"h":1920},"url":["/video/1.mp4"]}]}]}
 */
 
 var playlistSchema = new mongoose.Schema({
-	unit: [
+	uni: [
 		{
-			mode: String,
-			duration: String,
-			element: {
-				type: String,
-				layout: {
-					left: Number,
-					top: Number,
-					width: Number,
-					height: Number
-				},
-				source: [String ]
-			}
+			mod: String,
+			dur: String,
+			ele: [
+				{
+					typ: String,
+					siz: {
+						l: Number,
+						t: Number,
+						w: Number,
+						h: Number
+					},
+					url: [String]
+				}
+			]
 		}
 	]
 });

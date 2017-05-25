@@ -3,7 +3,7 @@ var router = express.Router();
 var path = require('path');
 
 var terminal = require('../models/terminal');
-var playlist = require('../models/playlist');
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
